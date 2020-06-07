@@ -28,8 +28,54 @@ class TopBar extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                
-              ],)
+                CircleAvatar(
+                  backgroundColor: Color.fromRGBO(255, 0, 0, 0.3),
+                  child: IconButton(
+                      icon: Icon(Icons.dehaze),
+                      color: Colors.white,
+                      onPressed: () {}),
+                ),
+                CircleAvatar(
+                  backgroundColor: Color.fromRGBO(255, 0, 0, 0.3),
+                  child: IconButton(
+                      icon: Icon(Icons.calendar_today),
+                      color: Colors.white,
+                      tooltip: 'Открыть календарь',
+                      onPressed: () {}),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Container(
+                  alignment: Alignment.centerLeft,
+                  height: 50,
+                  width: 150,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: <Widget>[
+                      //! Добавить иконки с датами
+                    ],
+                  ),
+                ),
+                Chip(
+                  backgroundColor: Color.fromRGBO(255, 0, 0, 0.5),
+                  label: Text(
+                    '02.06.2020',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+                 CircleAvatar(
+                  backgroundColor: Color.fromRGBO(255, 0, 0, 0.5 ),
+                  child: IconButton(
+                      icon: Icon(Icons.insert_chart),
+                      color: Colors.white,
+                      tooltip: 'Показать график',
+                      onPressed: () {}),
+                ),
+              ],
+            ),
           ],
         ),
       ),
