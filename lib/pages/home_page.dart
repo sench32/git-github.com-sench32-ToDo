@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sakura_app_youtube/widgets/top_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key key}) : super(key: key);
@@ -9,7 +10,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
-           
+           TopBar()
         ],
       ),
       
